@@ -1,0 +1,104 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="/dist/style.css">
+    <!-- costom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- deasi ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Apply background color to the entire body with !important */
+        body {
+            background-color: #e7ebee !important;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar area start -->
+    <div class="navbar bg-teal-950">
+        <div class="flex-1 text-slate-200 ">
+            <h2 class="text-base sm:text-lg md:text-xl sm:ml-5">Personal Blogging App</h2>
+        </div>
+        <div class="flex justify-center text-slate-200 ">
+            <div class="user-ren text-xl hidden sm:block ">
+
+            </div>
+        </div>
+        <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar mr-3">
+                <div class="w-10 rounded-full ">
+                    <img class="profileImage rounded-full w-10" src="" alt="">
+                </div>
+            </div>
+            <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 ">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><button class="logout-btn">Logout</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg-teal-800 w-full h-16 flex items-center">
+        <h2 class="ml-8 sm:ml-16  md:ml-16 lg:ml-20 text-slate-200 text-2xl ">Dashborad</h2>
+    </div>
+
+    <!-- navbar area end -->
+
+    <!-- publish blog area start -->
+    <div class="main-div-signup">
+        <div
+            class="signup blog-container bg-white rounded-2xl shadow-1 w-[300px] sm:w-[500px] md:w-[650]  mt-8 sm:mt-11">
+            <form class="form">
+                <div>
+                    <div class="flex justify-center">
+                        <input type="text" required minlength="5" maxlength="50" placeholder="Type here"
+                            class="blog-input input input-bordered mt-6 w-[250px] sm:w-[450px] md:w-[600]  " />
+                    </div>
+                    <div class="flex justify-center">
+                        <textarea required minlength="30" maxlength="170" cols="5"
+                            class="blog-textarea textarea textarea-bordered mt-3 w-[250px] sm:w-[450px] md:w-[600]  "
+                            placeholder="What is your mind"></textarea>
+                    </div>
+                    <div class="flex justify-center">
+                        <button
+                            class="publish-btn bg-teal-800 text-slate-200 px-7 py-3 rounded-md mt-3  hover:bg-teal-900">Publish
+                            Blog</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- publish blog area end -->
+    <h2 class="text-3xl font-bold text-center mt-10 ">My Blog</h2>
+
+    <!-- my blog area start -->
+    <div class="main-div-signup">
+        <div class="render"></div>
+
+    </div>
+    <!-- my blog area end -->
+
+    <div>
+        <dialog id="loading-modal" class="modal">
+            <span class="loading loading-spinner loading-md"></span>
+        </dialog>
+    </div>
+
+    <!-- javascript link -->
+    <script type="module" src="./scripts/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main-div-signup{
+    display: flex;
+    justify-content: center;
+    
+}
+.main-div-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.signup-container {
+    /* padding: 30px; */
+    padding: 0px 20px 10px 20px ;
+    width: 350px;
+    box-sizing: border-box;
+}
+.login-container {
+    padding: 0px 20px 20px 20px ;
+    width: 350px;
+    box-sizing: border-box;
+}
+.blog-container {
+    padding: 0px 20px 20px 20px ;
+    /* width: 800px; */
+    box-sizing: border-box;
+}
+.profile-container {
+    padding: 35px 35px 10px 35px;
+    /* width: 800px; */
+    box-sizing: border-box;
+}
+.home-main-div{
+    height: 100vh;
+    margin: 0;
+}
+.shadow-1{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+
+
+

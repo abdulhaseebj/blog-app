@@ -1,0 +1,65 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="/dist/style.css">
+    <!-- costom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- deasi ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Apply background color to the entire body with !important */
+        body {
+            background-color: #e7ebee !important;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- navbar area start -->
+        <div class="navbar bg-teal-950">
+            <div class="navbar flex justify-between ">
+                <h2 class="text-slate-200 text-xl ml-11">Personal Blogging App</h2>
+                <div class="flex justify-center">
+                    <a href="./dashboard.html "
+                        class="dashboardBtn text-slate-200 text-xl mr-11 hover:text-orange-300 ">Dashboard</a>
+                    <a href="./profile.html"
+                        class="profileBtn text-slate-200 text-xl mr-11 hover:text-orange-300  ">Profile</a>
+                    <button class="logoutBtn text-slate-200 text-xl mr-11 hover:text-orange-300 ">Logout</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="bg-teal-800 w-full h-16 flex items-center">
+            <h2 class="ml-20  text-slate-200 text-2xl wish"></h2>
+        </div>
+        <!-- navbar area end -->
+        <!-- all blog render area start -->
+        <div class="main-div-signup">
+            <div class="render">
+
+            </div>
+
+        </div>
+
+        <!-- all blog render end start -->
+
+    </div>
+    <!-- javascript link -->
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+
+</html>

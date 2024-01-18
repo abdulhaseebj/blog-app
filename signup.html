@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="/dist/style.css">
+    <!-- costom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- deasi ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="home-main-div bg-[#e7ebee] ">
+        <!-- navbar area start -->
+        <div class="navbar bg-teal-950">
+            <div class="navbar flex justify-between items-center">
+                <h2 class="text-slate-200 text-base sm:text-lg md:text-xl sm:ml-5">Personal Blogging App</h2>
+                <a href="./login.html"
+                    class="text-slate-200 text-base sm:text-lg md:text-xl sm:mr-5  hover:text-orange-300">LogIn</a>
+            </div>
+        </div>
+        <div class="bg-teal-800 w-full h-16 flex items-center">
+            <h2 class="ml-8 sm:ml-16  text-slate-200 text-2xl">SignUp</h2>
+        </div>
+        <!-- navbar area end -->
+        <!-- signup area start -->
+        <div class="home-main-div bg-[#e7ebee]">
+            <div class="main-div-signup  mt-7 xl:mt-28 ">
+                <div class="signup signup-container bg-white rounded-2xl shadow-1">
+                    <form class="form">
+                        <div class=" ">
+                            <div class="flex justify-center">
+                                <img src="./assets/Screenshot_2023-11-29_035605-removebg-preview.png" class="w-[100px]"
+                                    alt="">
+                            </div>
+                            <div class="flex justify-center">
+                                <input type="text" placeholder="First Name"
+                                    class="first-name input input-bordered input-md w-full max-w-xs "
+                                    pattern="[a-zA-Z]{3,20}" required />
+                            </div>
+                            <div class="flex justify-center">
+                                <input type="text" placeholder="Last Name"
+                                    class="last-name input input-bordered input-md w-full max-w-xs mt-2"
+                                    pattern="[a-zA-Z]{1,20}" required />
+                            </div>
+                            <div class="flex justify-center">
+                                <input type="email" placeholder="Email"
+                                    class="email input input-bordered input-md w-full max-w-xs mt-2" required />
+                            </div>
+                            <div class="flex justify-center">
+                                <input type="password" placeholder="Password"
+                                    class="password input input-bordered input-md w-full max-w-xs mt-2"
+                                    pattern="^(?=.*[a-z]).{8,}" required />
+                            </div>
+                            <div class="flex justify-center">
+                                <input type="password" placeholder="Repeat Password"
+                                    class="repeat-password input input-bordered input-md w-full max-w-xs mt-2"
+                                    pattern="^(?=.*[a-z]).{8,}" required />
+                            </div>
+                            <div class="flex justify-center">
+                                <input type="file" 
+                                    class="upload-photo input input-bordered input-md w-full max-w-xs mt-2 pt-[6px]" required />
+                            </div>
+                            <p class="error text-red-600 mt-3 text-sm  text-center">  </p>
+                            <div class="flex justify-center">
+                                <button
+                                    class="bg-teal-800 text-slate-200 px-7 py-3 rounded-md mt-5 hover:px-9 hover:bg-teal-900">SignUp</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <dialog id="loading-modal" class="modal">
+                <span class="loading loading-spinner loading-md"></span>
+            </dialog>
+        </div>
+
+        <!-- signup area end -->
+    </div>
+    <!-- javascript link -->
+    <script type="module" src="./scripts/signup.js"></script>
+</body>
+
+</html>
