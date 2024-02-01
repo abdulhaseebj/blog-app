@@ -69,20 +69,20 @@ querySnapshot.forEach((doc) => {
 // render data function
 function renderData() {
     arr.map((item) => {
-        render.innerHTML += `<div class="signup  bg-white px-3 py-3 sm:px-4 sm:py-4 md:px-5 md:py-5 lg:px-7 lg:py-7 rounded-2xl shadow-1 w-[300px] sm:w-[500px] md:w-[650] mt-5 mb-5">
-        <div class="flex items-start gap-1">
-            <img class="profileImage rounded-full  w-[60px]" src="${item.userobj.profileUrl}" alt="">
+        render.innerHTML += `<div class="signup  sm:px-4 sm:py-4 md:px-5 md:py-5 lg:px-7 lg:py-7 shadow-1 w-[300px] sm:w-[500px] md:w-[650]">
+        <div class="image-div">
+            <img class="profileImage user-img" src="${item.userobj.profileUrl}" alt="">
 
                 <div>
-                    <p class="text-xl font-black pl-1 mt-2 ">${item.userobj.names}</p>
-                    <p class="text-sm pl-1 text-slate-500">${formatDate(item.postDate)}</p>
+                    <p class="user-name">${item.userobj.names}</p>
+                    <p class="date">${formatDate(item.postDate)}</p>
 
                 </div>
         </div>
         <div>
 
-            <h2 class="pl-1 mt-5 text-xl font-black">${item.Title}</h2>
-            <p class=" text-sm text-slate-500 pl-1 mt-3 mb-5">${item.Text}</p>
+            <h2 class="content-title">${item.Title}</h2>
+            <p class="content-text">${item.Text}</p>
         </div>
             </div>`
                 
